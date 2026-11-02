@@ -1,0 +1,353 @@
+
+/* ==============================
+   ABOUT SECTION
+============================== */
+
+.about-section {
+    padding: 90px 0;
+    background: #0b1224;
+    color: white;
+}
+
+/* Section Heading */
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.section-heading > span {
+    color: #60a5fa;
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.section-heading h2 {
+    font-size: 40px;
+    font-weight: 800;
+    margin: 12px 0;
+}
+
+.section-heading h2 span {
+    font-size: inherit;
+    letter-spacing: 0;
+    background: linear-gradient(90deg, #60a5fa, #c084fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-heading p {
+    color: #94a3b8;
+    margin-bottom: 0;
+}
+
+/* ==============================
+   ABOUT IMAGE
+============================== */
+
+.about-image-box {
+    position: relative;
+    padding: 20px;
+}
+
+.about-profile {
+    width: 100%;
+    height: 350px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(135deg, #1d4ed8, #7e22ce);
+    border: 5px solid rgba(96,165,250,0.3);
+
+    box-shadow: 0 0 40px rgba(37,99,235,0.2);
+    transition: 0.3s;
+}
+
+.about-profile span {
+    font-size: 90px;
+    font-weight: 800;
+    color: white;
+}
+
+/* Developer Badge */
+
+.about-experience {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    background: #1e293b;
+    border: 1px solid #334155;
+
+    padding: 15px 20px;
+    border-radius: 12px;
+    z-index: 2;
+}
+
+.about-experience svg {
+    font-size: 30px;
+    color: #60a5fa;
+}
+
+.about-experience h4 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.about-experience p {
+    font-size: 12px;
+    color: #94a3b8;
+    margin: 0;
+}
+
+/* ==============================
+   ABOUT CONTENT
+============================== */
+
+.about-content h3 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.about-content h5 {
+    color: #60a5fa;
+    margin: 15px 0;
+    font-size: 19px;
+}
+
+.about-content > p {
+    color: #94a3b8;
+    line-height: 1.9;
+    margin-bottom: 30px;
+}
+
+.about-details {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.about-detail-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+}
+
+.about-detail-item svg {
+    font-size: 25px;
+    color: #60a5fa;
+    min-width: 25px;
+}
+
+.about-detail-item h6 {
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.about-detail-item p {
+    color: #94a3b8;
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.7;
+}
+
+/* Button */
+
+.about-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 13px 24px;
+    border-radius: 8px;
+
+    color: white;
+    text-decoration: none;
+
+    background: linear-gradient(135deg, #2563eb, #9333ea);
+    transition: 0.3s;
+}
+
+.about-btn:hover {
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(59,130,246,0.3);
+}
+
+/* ==============================
+   TABLET RESPONSIVE
+============================== */
+
+@media (max-width: 991px) {
+
+    .about-section {
+        padding: 70px 0;
+    }
+
+    .about-image-box {
+        max-width: 450px;
+        margin: 0 auto 30px;
+    }
+
+    .about-profile {
+        height: 320px;
+    }
+
+    .about-content h3 {
+        font-size: 27px;
+    }
+
+}
+
+/* ==============================
+   MOBILE RESPONSIVE
+============================== */
+
+@media (max-width: 576px) {
+
+    .about-section {
+        padding: 55px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 35px;
+    }
+
+    .section-heading > span {
+        font-size: 11px;
+        letter-spacing: 2.5px;
+    }
+
+    .section-heading h2 {
+        font-size: 29px;
+        margin: 10px 0;
+    }
+
+    .section-heading p {
+        font-size: 13px;
+        padding: 0 8px;
+    }
+
+    /* Profile Card */
+
+    .about-image-box {
+        width: 100%;
+        max-width: 340px;
+        padding: 10px;
+        margin: 0 auto 35px;
+    }
+
+    .about-profile {
+        height: 240px;
+        border-radius: 20px;
+        border-width: 4px;
+    }
+
+    .about-profile span {
+        font-size: 70px;
+    }
+
+    /* Developer Badge */
+
+    .about-experience {
+        bottom: 0;
+        right: 0;
+        padding: 10px 13px;
+        gap: 10px;
+        border-radius: 10px;
+    }
+
+    .about-experience svg {
+        font-size: 23px;
+    }
+
+    .about-experience h4 {
+        font-size: 13px;
+    }
+
+    .about-experience p {
+        font-size: 10px;
+    }
+
+    /* About Text */
+
+    .about-content {
+        text-align: left;
+    }
+
+    .about-content h3 {
+        font-size: 23px;
+        line-height: 1.4;
+    }
+
+    .about-content h5 {
+        font-size: 17px;
+        margin: 10px 0;
+    }
+
+    .about-content > p {
+        font-size: 13px;
+        line-height: 1.8;
+        margin-bottom: 22px;
+    }
+
+    /* Details */
+
+    .about-details {
+        gap: 20px;
+    }
+
+    .about-detail-item {
+        gap: 13px;
+    }
+
+    .about-detail-item svg {
+        font-size: 21px;
+        min-width: 21px;
+    }
+
+    .about-detail-item h6 {
+        font-size: 14px;
+    }
+
+    .about-detail-item p {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .about-btn {
+        margin-top: 23px;
+        padding: 11px 20px;
+        font-size: 13px;
+    }
+
+}
+
+/* ==============================
+   SMALL MOBILE
+============================== */
+
+@media (max-width: 380px) {
+
+    .about-image-box {
+        max-width: 290px;
+    }
+
+    .about-profile {
+        height: 215px;
+    }
+
+    .about-profile span {
+        font-size: 60px;
+    }
+
+    .about-content h3 {
+        font-size: 21px;
+    }
+
+}
